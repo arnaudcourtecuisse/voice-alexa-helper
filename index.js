@@ -74,7 +74,18 @@ const getSlotValueId = (requestEnvelope, slotName) => {
   return getOr(values, [0, 'id'], null);
 };
 
+/**
+ * Mixes helpers into the provided Alexa object
+ * @param {Object} Alexa - the object to mix-in, meant to be the Alexa SDK
+ * @returns {Object} provided object with mixed-in helper methods
+ */
+const mixin = (Alexa) => {
+  Alexa.getSlotValueId = getSlotValueId;
+  Alexa.getSlotValuesFromMatch = getSlotValuesFromMatch;
+};
+
 module.exports = {
   getSlotValueId,
   getSlotValuesFromMatch,
+  mixin,
 };
