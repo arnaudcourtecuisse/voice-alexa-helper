@@ -1,0 +1,16 @@
+{
+  "name": "alexa-helpers",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "ask-sdk-core": "^2.7.0"
+  },
+  "dependencies": {
+    "ask-sdk-core": "^2.7.0",
+    "ask-sdk-model": "^1.24.0"
+  }
+}
